@@ -10,14 +10,14 @@
 
 ### Indexed Expressions
 
- * [#11576](https://trac.sagemath.org/ticket/11576)
+* #11576
 
 ### Basic combinatorial objects
 
- * Integer Vectors [#12453](https://trac.sagemath.org/ticket/12453) : Refactor integer vectors using ClonableIntArray Cython data structure (need works)
- * Compositions (to come...)
+* Integer Vectors #12453 : Refactor integer vectors using ClonableIntArray Cython data structure (need works)
+* Compositions (to come...)
 
 ### Other Tickets
 
- * [#11257](https://trac.sagemath.org/ticket/11257) Avoid a coercion when computing an element to the power of 0 (Need Review!!!)
- * [#12460](https://trac.sagemath.org/ticket/12460) Multivariate polynomials as a module on symmetric functions (New Enhancement) 
+* #11257 Avoid a coercion when computing an element to the power of 0 (Need Review!!!)
+* #12460 Multivariate polynomials as a module on symmetric functions (New Enhancement) 

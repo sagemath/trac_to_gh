@@ -4,17 +4,14 @@ Here are the categories/files which still need a review. They are all
 essentially empty and already 100% doctested, so the review should be
 super quick. David Kohel, Javier, or whoever please go ahead!
 
-
 ```
 groupoid                       (positive prereview - Florent; Robert: please double check)
 ```
 
-
 Everything below has a positive review.
 
-------------------------------------------------------------------------------
+---
 Franco Saliola:
-
 
 ```
 semigroups                       (positive review)
@@ -26,8 +23,6 @@ examples/finite_semigroups       (positive review)
 finite_semigroups                (positive review)
 ```
 
-
-
 ```
 finite_monoids                           (positive review - Florent)
 examples/finite_monoids                  (positive review - Florent)
@@ -38,10 +33,8 @@ examples/commutative_additive_monoids    (positive review - Florent)
 commutative_additive_groups              (positive review - Florent)
 ```
 
-
-------------------------------------------------------------------------------
+---
 Nicolas (code by Florent)
-
 
 ```
 examples/sets_cat                 (positive review)
@@ -53,18 +46,15 @@ infinite_enumerated_sets          (positive review)
 examples/infinite_enumerated_sets (positive review)
 ```
 
-
-------------------------------------------------------------------------------
+---
 Jason Bandlow:
 
 ```
 modules_with_basis                (positive review)
 ```
 
-
-------------------------------------------------------------------------------
+---
 Florent:
-
 
 ```
 all                                         (positive review - Florent)
@@ -104,9 +94,7 @@ graded_modules_with_basis                   (positive review -- Essentially empt
 group_algebras                              (Positive review -- Essentially empty)
 ```
 
-
 David and Javier:
-
 
 ```
 algebra_ideals                 (positive review - Javier)
@@ -146,7 +134,6 @@ unique_factorization_domains   (positive review - Javier)
 vector_space                   (positive review - Javier)
 ```
 
-
 Florent: The two following aim to define operads over some ring. I
 marked them to be discussed since they are essentially empty and that
 if we want to have operads say in the category of sets then we will
@@ -160,9 +147,7 @@ framework may allow for a better design. I'll split them out in a
 separate patch, and we will see in the future what we will do with
 them when we will have concrete examples.
 
-
 ```
 operads                       (100% doctest)     (postponed for later)
 operads_with_basis            (100% doctest)     (postponed for later)
 ```
-

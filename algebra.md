@@ -10,23 +10,23 @@ This page gives an overview of open issues in algebra, sorted by topic.  If you 
 ## Tickets by topic
 ### Commutative algebra
 #### Polynomials
-* univariate polynomials defects: [#12529](https://trac.sagemath.org/ticket/12529), [#5075](https://trac.sagemath.org/ticket/5075), [#5225](https://trac.sagemath.org/ticket/5225), [#7253](https://trac.sagemath.org/ticket/7253), [#8158](https://trac.sagemath.org/ticket/8158), [#9795](https://trac.sagemath.org/ticket/9795), [#9929](https://trac.sagemath.org/ticket/9929), [#10978](https://trac.sagemath.org/ticket/10978), [#11537](https://trac.sagemath.org/ticket/11537), [#13227](https://trac.sagemath.org/ticket/13227), [#13360](https://trac.sagemath.org/ticket/13360), [#13999](https://trac.sagemath.org/ticket/13999), [#14693](https://trac.sagemath.org/ticket/14693), [#15788](https://trac.sagemath.org/ticket/15788), [#15866](https://trac.sagemath.org/ticket/15866), [#15867](https://trac.sagemath.org/ticket/15867), [#15954](https://trac.sagemath.org/ticket/15954), [#16613](https://trac.sagemath.org/ticket/16613), [#16993](https://trac.sagemath.org/ticket/16993), minor: [#6941](https://trac.sagemath.org/ticket/6941), [#16447](https://trac.sagemath.org/ticket/16447)
-* univariate polynomials enhancements: [#5590](https://trac.sagemath.org/ticket/5590), [#8558](https://trac.sagemath.org/ticket/8558), [#9558](https://trac.sagemath.org/ticket/9558), [#9792](https://trac.sagemath.org/ticket/9792), [#10591](https://trac.sagemath.org/ticket/10591), [#11731](https://trac.sagemath.org/ticket/11731), [#15868](https://trac.sagemath.org/ticket/15868), [#16516](https://trac.sagemath.org/ticket/16516), [#17476](https://trac.sagemath.org/ticket/17476), [#17922](https://trac.sagemath.org/ticket/17922), [#18419](https://trac.sagemath.org/ticket/18419), [#19171](https://trac.sagemath.org/ticket/19171), [#19172](https://trac.sagemath.org/ticket/19172),  minor: [#2165](https://trac.sagemath.org/ticket/2165), [#12033](https://trac.sagemath.org/ticket/12033), [#13358](https://trac.sagemath.org/ticket/13358)
-* multivariate polynomials defects: [#17251](https://trac.sagemath.org/ticket/17251), [#5544](https://trac.sagemath.org/ticket/5544), [#8555](https://trac.sagemath.org/ticket/8555), [#9902](https://trac.sagemath.org/ticket/9902), [#10147](https://trac.sagemath.org/ticket/10147), [#10483](https://trac.sagemath.org/ticket/10483), [#10575](https://trac.sagemath.org/ticket/10575), [#10946](https://trac.sagemath.org/ticket/10946), [#12129](https://trac.sagemath.org/ticket/12129), [#12198](https://trac.sagemath.org/ticket/12198), [#12908](https://trac.sagemath.org/ticket/12908), [#14624](https://trac.sagemath.org/ticket/14624), [#15971](https://trac.sagemath.org/ticket/15971), [#16040](https://trac.sagemath.org/ticket/16040), [#17550](https://trac.sagemath.org/ticket/17550), [#17723](https://trac.sagemath.org/ticket/17723), [#17638](https://trac.sagemath.org/ticket/17638), [#19130](https://trac.sagemath.org/ticket/19130), minor: [#11671](https://trac.sagemath.org/ticket/11671), [#13059](https://trac.sagemath.org/ticket/13059), [#15077](https://trac.sagemath.org/ticket/15077), [#15326](https://trac.sagemath.org/ticket/15326), [#16381](https://trac.sagemath.org/ticket/16381)
-* multivariate polynomials enhancements: [#2693](https://trac.sagemath.org/ticket/2693), [#3330](https://trac.sagemath.org/ticket/3330), [#4513](https://trac.sagemath.org/ticket/4513), [#6629](https://trac.sagemath.org/ticket/6629), [#7577](https://trac.sagemath.org/ticket/7577), [#8109](https://trac.sagemath.org/ticket/8109), [#16749](https://trac.sagemath.org/ticket/16749), [#17723](https://trac.sagemath.org/ticket/17723), [#18390](https://trac.sagemath.org/ticket/18390), [#18598](https://trac.sagemath.org/ticket/18598), minor: [#11764](https://trac.sagemath.org/ticket/11764), [#13716](https://trac.sagemath.org/ticket/13716), [#16432](https://trac.sagemath.org/ticket/16432)
-* Laurent polynomials: [#15437](https://trac.sagemath.org/ticket/15437), [#17554](https://trac.sagemath.org/ticket/17554), minor: [#18082](https://trac.sagemath.org/ticket/18082)
-* Puiseux polynomials: [#9289](https://trac.sagemath.org/ticket/9289)
+* univariate polynomials defects: #12529, #5075, #5225, #7253, #8158, #9795, #9929, #10978, #11537, #13227, #13360, #13999, #14693, #15788, #15866, #15867, #15954, #16613, #16993, minor: #6941, #16447
+* univariate polynomials enhancements: #5590, #8558, #9558, #9792, #10591, #11731, #15868, #16516, #17476, #17922, #18419, #19171, #19172,  minor: #2165, #12033, #13358
+* multivariate polynomials defects: #17251, #5544, #8555, #9902, #10147, #10483, #10575, #10946, #12129, #12198, #12908, #14624, #15971, #16040, #17550, #17723, #17638, #19130, minor: #11671, #13059, #15077, #15326, #16381
+* multivariate polynomials enhancements: #2693, #3330, #4513, #6629, #7577, #8109, #16749, #17723, #18390, #18598, minor: #11764, #13716, #16432
+* Laurent polynomials: #15437, #17554, minor: #18082
+* Puiseux polynomials: #9289
 
 #### Power series
-* univariate power series defects: [#3354](https://trac.sagemath.org/ticket/3354), [#8972](https://trac.sagemath.org/ticket/8972), [#10085](https://trac.sagemath.org/ticket/10085), [#10086](https://trac.sagemath.org/ticket/10086), minor: [#14889](https://trac.sagemath.org/ticket/14889), [#11858](https://trac.sagemath.org/ticket/11858), [#11889](https://trac.sagemath.org/ticket/11889)
-* univariate power series enhancements: [#6119](https://trac.sagemath.org/ticket/6119), [#6397](https://trac.sagemath.org/ticket/6397), [#9981](https://trac.sagemath.org/ticket/9981), [#10480](https://trac.sagemath.org/ticket/10480), [#11482](https://trac.sagemath.org/ticket/11482), [#15601](https://trac.sagemath.org/ticket/15601), minor: [#10720](https://trac.sagemath.org/ticket/10720), [#15720](https://trac.sagemath.org/ticket/15720), [#10271](https://trac.sagemath.org/ticket/10271), [#16194](https://trac.sagemath.org/ticket/16194)
-* multivariate power series defects: [#9980](https://trac.sagemath.org/ticket/9980), [#12240](https://trac.sagemath.org/ticket/12240), minor: [#15411](https://trac.sagemath.org/ticket/15411), enhancements: [#9981](https://trac.sagemath.org/ticket/9981), [#10532](https://trac.sagemath.org/ticket/10532), 
-* Laurent univariate series defects: [#6430](https://trac.sagemath.org/ticket/6430), [#12259](https://trac.sagemath.org/ticket/12259), [#17554](https://trac.sagemath.org/ticket/17554)
-* Laurent multivariate series: [#19343](https://trac.sagemath.org/ticket/19343)
-* lazy power series: [#15249](https://trac.sagemath.org/ticket/15249), [#6800](https://trac.sagemath.org/ticket/6800), [#10084](https://trac.sagemath.org/ticket/10084), [#15673](https://trac.sagemath.org/ticket/15673)
-* Puiseux series: [#4618](https://trac.sagemath.org/ticket/4618)
+* univariate power series defects: #3354, #8972, #10085, #10086, minor: #14889, #11858, #11889
+* univariate power series enhancements: #6119, #6397, #9981, #10480, #11482, #15601, minor: #10720, #15720, #10271, #16194
+* multivariate power series defects: #9980, #12240, minor: #15411, enhancements: #9981, #10532, 
+* Laurent univariate series defects: #6430, #12259, #17554
+* Laurent multivariate series: #19343
+* lazy power series: #15249, #6800, #10084, #15673
+* Puiseux series: #4618
 
 #### Sequences
-* `combinat.species.*stream`: [#15673](https://trac.sagemath.org/ticket/15673)
-* infinite/lazy lists: [#16107](https://trac.sagemath.org/ticket/16107)
-* polynomial sequences: [#10856](https://trac.sagemath.org/ticket/10856)
+* `combinat.species.*stream`: #15673
+* infinite/lazy lists: #16107
+* polynomial sequences: #10856

@@ -4,7 +4,7 @@ The [DividedPowerAlgebra](http://trac.sagemath.org/sage_trac/search/opensearch?q
 
 The divided power algebra is a Hopf algebra and is the dual Hopf algebra to R[x]. The coproduct on the divided power Hopf algebra is x<sup>k</sup> |--> x<sup>k</sup> x 1 + x<sup>k-1</sup> x x + ... 1 x x<sup>k</sup> (where I have used x as an indeterminate and as a tensor product symbol).
 
-See ticket [#11979](https://trac.sagemath.org/ticket/11979)
+See ticket #11979
 ---
 
 Attachments:

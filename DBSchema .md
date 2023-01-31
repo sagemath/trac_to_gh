@@ -2,29 +2,29 @@
 
 I think these are all of the relevant tables for ticket queries (and possibly some extra ones).
 
- * system
+* system
   * name text (pk)
   * value text
- * permission
+* permission
   * username text (pk)
   * action text (pk)
- * auth_cookie
+* auth_cookie
   * cookie text (pk)
   * name text (pk)
   * ipnr text (pk)
   * time integer
- * session
+* session
   * sid text (pk)
   * authenticated integer (pk)
   * last_visit integer
   * session_authenticated_idx (index)
   * session_last_visit_idx (index)
- * session_attribute
+* session_attribute
   * sid text (pk)
   * authenticated integer (pk)
   * name text (pk)
   * value text
- * attachment
+* attachment
   * type text (pk)
   * id text (pk)
   * filename text (pk)
@@ -33,7 +33,7 @@ I think these are all of the relevant tables for ticket queries (and possibly so
   * description text
   * author text
   * ipnr text
- * wiki
+* wiki
   * name text (pk)
   * version integer (pk)
   * time integer
@@ -43,18 +43,18 @@ I think these are all of the relevant tables for ticket queries (and possibly so
   * comment text
   * readonly integer
   * wiki_time_idx (index)
- * revision
+* revision
   * repos integer (pk)
   * rev text (pk)
   * time integer
   * author text
   * message text
   * revision_time_idx (index)
- * repository
+* repository
   * id integer(pk)
   * name text (pk)
   * value text
- * node_change
+* node_change
   * repos integer (pk)
   * rev text (pk)
   * path text (pk)
@@ -63,7 +63,7 @@ I think these are all of the relevant tables for ticket queries (and possibly so
   * base_path text
   * base_rev text
   * node_change_rev_idx (index)
- * ticket
+* ticket
   * id integer (pk)
   * type text
   * time integer
@@ -84,7 +84,7 @@ I think these are all of the relevant tables for ticket queries (and possibly so
   * ticket_pkey (index)
   * ticket_status_idx (index)
   * ticket_time_idx (index)
- * ticket_change
+* ticket_change
   * ticket integer (pk)
   * time integer (pk)
   * author text
@@ -93,28 +93,28 @@ I think these are all of the relevant tables for ticket queries (and possibly so
   * newvalue text
   * ticket_change_time_idx (index)
   * ticket_change_ticket_idx (index)
- * ticket_custom
+* ticket_custom
   * ticket integer (pk)
   * name text (pk)
   * value text
- * enum
+* enum
   * type text (pk)
   * name text (pk)
   * value text
- * component
+* component
   * name text (pk)
   * owner text
   * description text
- * milestone
+* milestone
   * name text (pk)
   * due integer
   * completed integer
   * description text
- * version
+* version
   * name text (pk)
   * time integer
   * description text
- * report
+* report
   * id integer (pk)
   * author text
   * title text

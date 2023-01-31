@@ -1,7 +1,6 @@
 # Patchbot plugins and migration to [GitHub](GitHub) Actions
 
 
-
 ```
 ┌─┬──────┐
 │░│ ⊙  ʘ │  .oO(where will I travel after retirement?)
@@ -9,7 +8,6 @@
 │░│ ──── │
 ╘═╧══════╛
 ```
-
 
 [Developer's guide: Working on Tickets](https://8bf9d9738304b9bf1dee14ee639c934db15972a5--sagemath-tobias.netlify.app/developer/trac.html#working-on-tickets) explains the new GH Actions workflows that replace the Patchbot.
 
@@ -156,7 +154,7 @@ See [pycodestyle documentation](http://pycodestyle.pycqa.org/en/latest/intro.htm
 
 Look for the presence of badly formatted trac roles `:trac:`
 
-The correct syntax is `:trac:`23456``
+The correct syntax is <code>:trac:\`23456\`</code>
 
 ### startup_time
 

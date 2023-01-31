@@ -5,7 +5,6 @@ Please register patchbots below, giving contact details
 
 This helps contact the owner when a patchbot is stuck.
 
-
 ```
 patchbot name           owner
 -------------           -----
@@ -50,7 +49,6 @@ x200t-ThinkPad-*        jkroeker
 zorn                    agd
 44e979ad077a            embray (docker installation)
 ```
-
 
 Instructions for running a patchbot are on the [patchbot](patchbot) page of this wiki.
 
